@@ -1,6 +1,6 @@
 package com.example.bookMyShow.Dtos.ResponseDtos;
 
-import com.example.bookMyShow.Models.Ticket;
+import com.example.bookMyShow.Dtos.extraDto.TicketListDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,5 +14,6 @@ import java.util.List;
 @NoArgsConstructor
 public class TicketListResponseDto {
 
-    private List<Ticket> ticketList;
+
+    private List<TicketListDto> ticketList;
 }

@@ -70,7 +70,7 @@ public class UserService {
         }
 
         User user = userOptional.get();
-
-        return TicketTransformer.convertTicketEntityToResponseDto(user);
+        TicketListResponseDto ticketListResponseDto = TicketTransformer.convertTicketEntityToResponseDto(user);
+        return ticketListResponseDto;
     }
 }
